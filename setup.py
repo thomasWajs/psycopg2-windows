@@ -6,10 +6,11 @@ setup(
     summary='Python-PostgreSQL Database Adapter',
     author='Federico Di Gregorio',
     author_email='fog@initd.org',
-    description='Agnostic and easy to use ajax library for django',
+    description='PostgreSQL Database Driver',
     url='http://initd.org/psycopg',
     license='GPL with exceptions or ZPL',
-    package_data={'dajaxice': ['templates/dajaxice/*']},
+    packages=find_packages("."),
++   package_data={'psycopg2': ['*.pyd']},
     long_description=("psycopg2 is a PostgreSQL database adapter for the Python programming "
                       "language.  psycopg2 was written with the aim of being very small and fast, "
                       "and stable as a rock. "
